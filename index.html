@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css"
+        integrity="sha256-XoaMnoYC5TH6/+ihMEnospgm0J1PM/nioxbOUdnM8HY=" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Federico Zotti</title>
+</head>
+
+<body class="light" id="top">
+    <header class="header center">
+        <h3>
+            <a href="https://example.com/cleanfolio-minimal" class="link">7-bit.xyz</a>
+        </h3>
+
+        <nav class="nav center">
+            <ul class="nav__list center">
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="#projects">Projects</a>
+                </li>
+                <li class="nav__list-item">
+                    <a class="link link--nav" href="#skills">Skills</a>
+                </li>
+                <!-- <li class="nav__list-item">
+                    <a class="link link--nav" href="#contact">Contact</a>
+                </li> -->
+            </ul>
+
+            <button type="button" aria-label="toggle theme" class="btn btn--icon">
+                <i aria-hidden="true" id="btn-theme" class="fa fa-moon"></i>
+            </button>
+
+            <button type="button" aria-label="toggle navigation" class="btn btn--icon nav__hamburger">
+                <i aria-hidden="true" class="fa fa-bars"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- About -->
+        <div class="about center">
+            <h1>Hi, I am <span class="about__name">Federico Zotti.</span></h1>
+            <h2 class="about__role">Student and Developer.</h2>
+            <!-- <p class="about__desc">
+                Consectetur neque sed quam molestiae consectetur nesciunt sit alias
+                Vitae libero perferendis reprehenderit optio veritatis Accusantium at
+                voluptatum cumque temporibus et Explicabo iste porro quis numquam
+                distinctio Repellendus adipisci nam perferendis amet eaque hic
+                Voluptates
+            </p> -->
+
+            <div class="about__contact center">
+                <a href="https://example.com">
+                    <span class="btn btn--outline">Curriculum Vitae</span>
+                </a>
+                <a href="https://example.com">
+                    <span class="btn btn--outline">Blog</span>
+                </a>
+                <a href="http://pdfs.7-bit.xyz">
+                    <span class="btn btn--outline">PDFs</span>
+                </a>
+
+                <a href="https://codeberg.org/fede-26" aria-label="codeberg" class="link link--icon">
+                    <i aria-hidden="true" class="fa fa-code-fork fa-lg"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/federico-zotti-37142627a/" aria-label="linkedin"
+                    class="link link--icon">
+                    <i aria-hidden="true" class="fa fa-linkedin fa-lg"></i>
+                </a>
+                <a href="mailto:fedezotti.fz@gmail.com" aria-label="linkedin" class="link link--icon">
+                    <i aria-hidden="true" class="fa fa-envelope fa-lg"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Projects -->
+        <section id="projects" class="section projects">
+            <h2 class="section__title">Projects</h2>
+
+            <div class="projects__grid">
+                <div class="project">
+                    <h3>Rust x86 OS</h3>
+                    <p class="project__description">
+                        Piccolo kernel x86 scritto in Rust e QEMU.
+                        Il kernel è in grado di gestire gli interrupt, e la scheda video.
+                        Sono stati implementati diversi allocatori di memoria.
+                    </p>
+                    <ul class="project__stack">
+                        <li class="project__stack-item">System Programming</li>
+                        <li class="project__stack-item">Rust</li>
+                        <li class="project__stack-item">QEMU</li>
+                    </ul>
+
+                    <a href="https://codeberg.org/fede-26/blog_os" aria-label="source code" class="link link--icon">
+                        <i aria-hidden="true" class="fa fa-code fa-lg"></i>
+                    </a>
+                </div>
+
+                <div class="project">
+                    <h3>GameBoy Emulator</h3>
+                    <p class="project__description">
+                        Emulatore del classico GameBoy scritto in Rust.
+                        L'emulatore implementa tutti gli OP codes della CPU.
+                        Non è implementata la PPU e gli interrupt.
+                    </p>
+                    <ul class="project__stack">
+                        <li class="project__stack-item">Emulator</li>
+                        <li class="project__stack-item">Assembly</li>
+                        <li class="project__stack-item">Rust</li>
+                    </ul>
+
+                    <a href="https://codeberg.org/fede-26/gameboy-emu" aria-label="source code" class="link link--icon">
+                        <i aria-hidden="true" class="fa fa-code fa-lg"></i>
+                    </a>
+
+                </div>
+
+                <div class="project">
+                    <h3>Fluidoh</h3>
+                    <p class="project__description">
+                        Simulatore di fluidi scritto in Python utilizzando Pygame.
+                        Utilizza le equazioni di Navier-Stokes per simulare il moto dei fluidi.
+                        La risoluzione è bassa per via della complessità computazionale e del linguaggio scelto.
+                    </p>
+                    <ul class="project__stack">
+                        <li class="project__stack-item">Python</li>
+                        <li class="project__stack-item">Pygame</li>
+                        <li class="project__stack-item">Math</li>
+                    </ul>
+
+                    <a href="https://codeberg.org/fede-26/fluidoh" aria-label="source code" class="link link--icon">
+                        <i aria-hidden="true" class="fa fa-code fa-lg"></i>
+                    </a>
+
+                </div>
+
+                <div class="project">
+                    <h3>Daniloh</h3>
+                    <p class="project__description">
+                        Simulatore di fluidi scritto in Rust.
+                        Utilizza gli stessi algoritmi di <i>Fluidoh</i>, ma essendo scritto in Rust è molto più veloce.
+                    </p>
+                    <ul class="project__stack">
+                        <li class="project__stack-item">Rust</li>
+                        <li class="project__stack-item">Math</li>
+                    </ul>
+
+                    <a href="https://codeberg.org/fede-26/daniloh-rs" aria-label="source code" class="link link--icon">
+                        <i aria-hidden="true" class="fa fa-code fa-lg"></i>
+                    </a>
+
+                </div>
+
+                <div class="project">
+                    <h3>Syslogd</h3>
+                    <p class="project__description">
+                        Server syslog scritto in Rust.
+                        Accetta connessioni TCP e UDP senza TLS.
+                        I messaggi ricevuti vengono stampati in console.
+                    </p>
+                    <ul class="project__stack">
+                        <li class="project__stack-item">Syslog</li>
+                        <li class="project__stack-item">Networking</li>
+                        <li class="project__stack-item">Rust</li>
+                    </ul>
+
+                    <a href="https://codeberg.org/fede-26/syslogd-rust" aria-label="source code" class="link link--icon">
+                        <i aria-hidden="true" class="fa fa-code fa-lg"></i>
+                    </a>
+
+                </div>
+
+                <!-- <div class="project">
+                    <h3>Project 3</h3>
+                    <p class="project__description">
+                        Ipsum accusamus ea excepturi aliquid eligendi amet. Explicabo
+                        sapiente debitis labore sed ipsam Mollitia repellat illum quod
+                        unde beatae Quis
+                    </p>
+                    <ul class="project__stack">
+                        <li class="project__stack-item">SASS</li>
+                        <li class="project__stack-item">TypeScript</li>
+                        <li class="project__stack-item">React</li>
+                    </ul>
+
+                    <a href="https://github.com" aria-label="source code" class="link link--icon">
+                        <i aria-hidden="true" class="fab fa-github"></i>
+                    </a>
+                    <a href="https://example.com" aria-label="live preview" class="link link--icon">
+                        <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+                    </a>
+                </div> -->
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section skills" id="skills">
+            <h2 class="section__title">Skills</h2>
+            <ul class="skills__list">
+                <li class="skills__list-item btn btn--plain">Linux</li>
+                <li class="skills__list-item btn btn--plain">Git</li>
+                <li class="skills__list-item btn btn--plain">Python</li>
+                <li class="skills__list-item btn btn--plain">C</li>
+                <li class="skills__list-item btn btn--plain">Rust</li>
+                <li class="skills__list-item btn btn--plain">Assembly</li>
+                <li class="skills__list-item btn btn--plain">Java</li>
+                <li class="skills__list-item btn btn--plain">JSP</li>
+                <li class="skills__list-item btn btn--plain">HTML</li>
+                <li class="skills__list-item btn btn--plain">CSS</li>
+                <li class="skills__list-item btn btn--plain">TypeScript</li>
+                <li class="skills__list-item btn btn--plain">Angular</li>
+                <li class="skills__list-item btn btn--plain">CI/CD</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <!-- <section class="section contact center" id="contact">
+            <h2 class="section__title">Links</h2>
+            <a href="http://pdfs.7-bit.xyz">
+                <span class="btn btn--outline">PDFs</span>
+            </a>
+            <a href="http://blog.7-bit.xyz">
+                <span class="btn btn--outline">Blog</span>
+            </a>
+        </section> -->
+    </main>
+
+    <footer class="footer">
+        <a href="https://github.com/rajshekhar26/cleanfolio-minimal" class="link footer__link">
+            Inspired by cleanfolio-minimal
+        </a>
+    </footer>
+
+    <div class="scroll-container">
+        <div class="scroll-top">
+            <a aria-label="Scroll up" href="#top">
+                <i aria-hidden="true" class="fa fa-arrow-up"></i>
+            </a>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
