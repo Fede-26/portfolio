@@ -27,20 +27,20 @@
   }
   
   .light {
-    --clr-bg: #fcfcfc;
-    --clr-bg-alt: #fff;
-    --clr-fg: #555;
-    --clr-fg-alt: #444;
-    --clr-primary: #941acc;
+    --clr-bg: #f7f7f7;
+    --clr-bg-alt: #ffffff;
+    --clr-fg: #494949;
+    --clr-fg-alt: #363636;
+    --clr-primary: #702096;
     --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   }
   
   .dark {
-    --clr-bg: #0e1016;
-    --clr-bg-alt: #262b46;
-    --clr-fg: #b9b9c4;
-    --clr-fg-alt: #f0f0ff;
-    --clr-primary: #835797;
+    --clr-bg: #141518;
+    --clr-bg-alt: #28292e;
+    --clr-fg: #cacacf;
+    --clr-fg-alt: #f1f1ff;
+    --clr-primary: #af70cc;
     --shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
       rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   }
@@ -295,6 +295,7 @@
     text-align: center;
     box-shadow: var(--shadow);
     transition: transform 0.2s linear;
+    background-color: var(--clr-bg-alt);
   }
   
   .project:hover {
